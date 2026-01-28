@@ -3,7 +3,7 @@ import logsData from "./logsData";
 const Logs = () => {
   const highCarbonLogs = logsData.filter(log => log.carbon >= 4);
   return (
-    <div className="card">
+    <div>
       <h2>High Carbon Activities</h2>
       <ul>
         {highCarbonLogs.map(log => (
